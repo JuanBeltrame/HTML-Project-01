@@ -86,6 +86,8 @@
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
+            max-width: 500px;
+            margin: 40px auto;
         }
 
         .footer {
@@ -110,12 +112,12 @@
             </ul>
         </nav>
     </header>
-    <div>
+    <div class="contenedor-formulario">
         <form>
             <label for="nombre"> Nombre: </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribi aqui tu nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribi aqui tu nombre" required minlength="3">
             <label for="apellido"> Apellido: </label>
-            <input type="email" id="apellido" name="apellido" placeholder="Escribi aqui tu apellido" required>
+            <input type="email" id="apellido" name="apellido" placeholder="Escribi aqui tu apellido" required minlength="3">
             <label for="email"> Email: </label>
             <input type="email" id="email" name="email" placeholder="Escribi aqui tu email" required>
             <label for="pais"> Pais: </label>
@@ -130,11 +132,29 @@
                 <option value="Peru">Peru</option>
                 <option value="Ecuador">Ecuador</option>
             </select>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escribi aqui tu comentario"></textarea>
+
+            <label for="motivo"> Motivo de Contacto: </label>
+            <input type="radio" id="motivo" name="motivo"> <i>Soy Fan</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Quiero una remera</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Comerciales</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Reclamos</i> 
+
+            <input type="submit" value="Enviar">
         </form>
     </div>
-
+    <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br>
+      </div>
     <footer class="footer">
-        <P>Derechos Reservados, &copy; 2024</P>
+        <P>Derechos Reservados, &copy; 2025</P>
     </footer>
 </body>
 
